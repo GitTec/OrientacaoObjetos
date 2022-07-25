@@ -7,12 +7,12 @@ def anoAtual(infano):
     print("-" * 25)
 
 
-def anoBissexto():
-    if (ano % 4 == 0) or (ano % 100 != 0) or (ano % 400 == 0):
+def anoBissexto(anobi):
+    if (anobi % 4 == 0 and anobi % 100 != 0) or (anobi % 400 == 0):
         print("O ANO É BISSEXTO")
     else:
         print("O ANO NÃO É BISSEXTO!!!!!")
 
 
 anoAtual(ano)
-anoBissexto()
+anoBissexto(anobi=ano)
